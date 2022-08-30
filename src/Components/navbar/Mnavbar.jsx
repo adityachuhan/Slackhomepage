@@ -28,7 +28,7 @@ function scrollFunction() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown">
                 <a className="mx-2 nav-link dropdown-toggle text-dark" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                    Products
                 </a>
                 <ul className="dropdown-menu">
                     <li><a className="dropdown-item" href="/">Action</a></li>
@@ -38,14 +38,14 @@ function scrollFunction() {
                 </ul>
                 </li>
                 <li className=" mx-2">
-                <a className="nav-link  active text-dark" aria-current="page" href="/">Home</a>
+                <a className="nav-link  active text-dark" aria-current="page" href="/">Pricing</a>
                 </li>
                 <li className=" mx-2">
-                <a className="nav-link text-dark" href="/">Link</a>
+                <a className="nav-link text-dark" href="/">Solution</a>
                 </li>
                 
                 <li className=" mx-2">
-                <a className="nav-link text-dark">Disabled</a>
+                <a className="nav-link text-dark">Enterprise</a>
                 </li>
             </ul>
             <div className="d-flex align-items-center" role="search">

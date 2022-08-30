@@ -12,7 +12,7 @@ const Pnavbar = (props) => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown">
                 <a className="mx-3 nav-link dropdown-toggle text-light" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                    Products
                 </a>
                 <ul className="dropdown-menu">
                     <li><a className="dropdown-item" href="/">Action</a></li>
@@ -22,14 +22,14 @@ const Pnavbar = (props) => {
                 </ul>
                 </li>
                 <li className='mx-2' >
-                <a className="nav-link  active text-light" aria-current="page" href="/">Home</a>
+                <a className="nav-link  active text-light" aria-current="page" href="/">Pricing</a>
                 </li>
                 <li className='mx-2' >
-                <a className="nav-link text-light" href="/">Link</a>
+                <a className="nav-link text-light" href="/">Solution</a>
                 </li>
                 
                 <li className='mx-2' >
-                <a className="nav-link text-light">Disabled</a>
+                <a className="nav-link text-light">Enterprise</a>
                 </li>
             </ul>
             <div className="d-flex align-items-center" role="search">
