@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Pnavbar from './Components/navbar/Pnavbar';
+import Mainhome from './Components/Mainhome';
+import Testimonial from './Components/Testimonial';
+import Ladder from './Components/Ladder';
+import Accolades from './Components/Accolades';
+import Caedbox from './Components/Caedbox';
+import Offer from './Components/Offer';
+import Lownav from './Components/Lownav';
+import Mnavbar from './Components/navbar/Mnavbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Pnavbar logo = {logo}/>
+    <Mnavbar logo = {logo}/>
+    <Mainhome/>
+    <Testimonial/>
+    <Ladder/>
+    <Accolades/>
+    <Caedbox/>
+    <Offer/>
+    <Lownav logo = {logo}/>
+    </>
   );
 }
 

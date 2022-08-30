@@ -1,13 +1,366 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+/* scrolling navbat */
+
+#navbar {
+    background-color: #333;
+    /* Black background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    top: -76px;
+    /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    /* Full width */
+    transition: top 0.4s ease-out;
+    z-index: 1000;
+    /* Transition effect when sliding down (and up) */
+}
+
+
+/* css for two button in navbar */
+
+.navbutton1 {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    padding: 7px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0px .7rem;
+}
+
+.navbutton1:hover {
+    box-shadow: inset 0 0 0 2px white;
+    color: white;
+    transition: all .1s ease-in-out 0s;
+}
+
+.navbutton1:not(:hover) {
+    transition: all .1s ease-in-out 0s;
+}
+
+.navbutton2 {
+    border: 2px solid white;
+    color: #3b0e3a;
+    background: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px 15px;
+    border-radius: 4px;
+    margin: 0px .7rem;
+}
+
+.navbutton2:hover {
+    border: 2px solid #3b0e3a;
+    color: #3b0e3a;
+    transition: all .3s ease-in-out 0s;
+}
+
+.navbutton2:not(:hover) {
+    transition: all .3s ease-in-out 0s;
+}
+
+
+/* csc for mnavbar buttons */
+
+.navbutton3 {
+    border: 1px solid #3b0e3a;
+    color: #3b0e3a;
+    background: transparent;
+    text-decoration: none;
+    padding: 7px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.navbutton3:hover {
+    box-shadow: inset 0 0 0 2px #3b0e3a;
+    color: #3b0e3a;
+    transition: all .1s ease-in-out 0s;
+}
+
+.navbutton3:not(:hover) {
+    transition: all .1s ease-in-out 0s;
+}
+
+.navbutton4 {
+    border: 2px solid #3b0e3a;
+    color: white;
+    background: #3b0e3a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px 15px;
+    border-radius: 4px;
+}
+
+.navbutton4:hover {
+    border: 2px solid white;
+    color: white;
+    transition: all .3s ease-in-out 0s;
+}
+
+.navbutton4:not(:hover) {
+    transition: all .3s ease-in-out 0s;
+}
+
+
+/* css for button in accolades */
+
+.buttonaccolade1 {
+    border: 2px solid #3b0e3a;
+    color: white;
+    background: #3b0e3a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.buttonaccolade1:hover {
+    background: #300a30;
+    color: white;
+    transition: all .3s ease-in-out 0s;
+}
+
+.buttonaccolade1:not(:hover) {
+    transition: all .3s ease-in-out 0s;
+}
+
+.buttonaccolade2 {
+    border: 2px solid #3b0e3a;
+    color: #3b0e3a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.buttonaccolade2:hover {
+    color: #3b0e3a;
+}
+
+.buttonaccolade2:not(:hover) {
+    transition: all .3s ease-in-out 0s;
+}
+
+
+/* css for anchor tag underline effect in ladde sectiom */
+
+.specialanchor {
+    text-decoration: none;
+    margin-bottom: 28px;
+    color: #1264a3;
+    position: relative;
+}
+
+.specialanchor:hover {
+    color: #1264a3;
+    transition: all .2s ease-in-out 0s;
+}
+
+.specialanchor::after {
+    content: '';
+    position: absolute;
+    background-color: #1264a3;
+    height: 3px;
+    width: 0%;
+    left: 0px;
+    bottom: -10px;
+    transition: .3s;
+}
+
+.specialanchor:hover::after {
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in-out 0s;
+}
+
+.card:not(:hover) {
+    transform: scale(1);
+    transition: all .3s ease-in-out 0s;
+}
+
+
+/* css for anchor tag in lower nav */
+
+.anchor {
+    color: #282c34;
+    margin: 8px 0px;
+    font-size: .875rem;
+}
+
+.cnntt {
+    width: 100%;
+    justify-content: space-around;
+}
+
+#check {
+    border-radius: 43px;
+}
+
+.home,
+.jus {
+    justify-content: space-between;
+}
+
+.record,
+.percentbox {
+    justify-content: space-around;
+}
+
+.ladderbox {
+    justify-content: space-between;
+}
+
+.laddertext {
+    width: 35%;
+}
+
+.ldb3 .laddertext {
+    margin-right: 100px;
+}
+
+.card {
+    width: "17rem"
+}
+
+.flesh {
+    justify-content: center;
+}
+
+
+/* media query for responsive design */
+
+@media (max-width:992px) {
+    #check {
+        border-radius: 0px;
+    }
+    #navbar {
+        top: 0px;
+    }
+    .nvbr,
+    .mainhome,
+    .testimonial,
+    .ladder,
+    .accolades,
+    .cardy,
+    .offer,
+    .lownav {
+        width: 992px;
+    }
+    .home,
+    .record,
+    .percentbox,
+    .flesh,
+    .jus {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ladderbox {
+        flex-wrap: wrap;
+    }
+    .flesh {
+        flex-direction: column;
+    }
+    .videobox {
+        margin-top: 30px;
+    }
+    .headline {
+        text-align: center;
+    }
+    .laddertext {
+        text-align: center;
+        width: 100%;
+    }
+    .burttonbox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ldb3 {
+        flex-direction: column-reverse;
+    }
+    .ldb3 .laddervideo {
+        text-align: end;
+    }
+    .ldb3 .laddertext {
+        margin-right: 0px;
+        padding-left: 30px;
+    }
+    .card {
+        width: 17rem;
+        margin: 5px 5px;
+    }
+}
+
+@media (max-width:800px) {
+    .nvbr,
+    .mainhome,
+    .testimonial,
+    .ladder,
+    .accolades,
+    .cardy,
+    .offer,
+    .lownav {
+        width: 800px;
+    }
+}
+
+@media (max-width:600px) {
+    .nvbr,
+    .mainhome,
+    .testimonial,
+    .ladder,
+    .accolades,
+    .cardy,
+    .offer,
+    .lownav {
+        width: 600px;
+    }
+    .card {
+        width: 80%;
+    }
+    .percentbox {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1000px) {
+    .cnt {
+        flex-wrap: wrap;
+    }
+    .cnt svg {
+        margin: 58px;
+    }
+}
+
+.accordion {
+    display: none;
+}
+
+.notaccordion {
+    display: flex;
+}
+
+@media (max-width:570px) {
+    .notaccordion {
+        display: none;
+    }
+    .accordion {
+        display: block;
+    }
 }
